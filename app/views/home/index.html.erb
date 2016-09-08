@@ -1,0 +1,211 @@
+
+<header id="inicio" class="parallax-window" data-parallax="scroll" data-image-src="<%= image_path 'back-1.jpg' %>">
+	
+    <div class="header-content">
+        <div class="header-content-inner">
+            <h1 class="wow zoomIn animated">Aprende y descubre con personas de tu localidad</h1>
+            <h2>Aquí podrás encontrar cursos, talleres y tutorias realizadas por personas de tu localidad con ganas de enseñar sus habilidades.</h2>
+            
+            <a href="#tematicas" class="btn-mouse page-scroll">				                
+                <%= image_tag "mouse-flechas.png", :alt => "¿Cómo funciona?", :class => "mouse bounce animated infinito" %>				
+            </a>
+			
+        </div>
+
+			
+    </div>
+    <div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 content-bottom">
+				<form class="form-horizontal" role="form">
+					
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-10 col-md-offset-1">
+                                <div class="form-group">
+                                    <label for="busqueda" class="sr-only">¿Qué estas buscando?</label>
+                                    <input type="text" class="form-control level1" id="busqueda" placeholder="¿Qué estas buscando?">
+                                    <input type="text" class="form-control level2" id="ciudad" value="Santiago, Chile" readonly="readonly">
+                                    <span class="pointmap glyphicon glyphicon-map-marker pad12"></span>
+                                    <button type="submit" class="btn btn-green form-control level3">
+                                        <span class="glyphicon glyphicon-search pad12"></span>
+                                        &nbsp;Buscar</button>
+                                </div>
+                            </div>								
+                        </div>
+                    </div>						
+					
+				</form>
+			</div>
+		</div>		
+	
+	</div>
+
+</header>
+
+<section class="bg-none bg-default" id="banner">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="banner-home">
+					<div class="cont-image">
+						<img src="/images/banner/tutoria.jpg" width="100%">
+					</div>
+					<div class="cont-txt bg-white">
+						<h2>Conviertete en maestro</h2>
+						<p>
+							Comparte tus conocimientos y habilidades con las personas de tu localidad.
+							Gana un dinero extra en los horarios y tiempos que tu estimes.
+						</p>
+						<a class="btn btn-menu">Registrate ahora</a>
+					</div>
+				</div>
+            </div>						
+		</div>
+	</div>
+</section>
+
+<section class="bg-primary bg-default" id="tematicas">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 text-center">
+				<div class="content-rel">
+					<div class="content-abs-titulo">
+                		<h2 class="section-heading como-funciona wow bounceInDown">Tematicas Principales</h2>
+					</div>
+				</div>
+            </div>			
+		</div>
+		<div class="row">
+			<div class="col-md-4 text-center">
+				<div class="item-tematica">
+					<h3>Gastronomia</h3>
+					<a href="#">
+					<img src="~/images/tematicas/gastronomia.jpg" />
+					</a>
+				</div>
+			</div>
+			<div class="col-md-4 text-center">
+				<div class="item-tematica">
+					<h3>Artes</h3>
+					<a href="#">
+					<img src="~/images/tematicas/artes.jpg" />
+					</a>
+				</div>
+			</div>
+			<div class="col-md-4 text-center">
+				<div class="item-tematica">
+					<h3>Deportes Extremos</h3>
+					<a href="#">
+					<img src="~/images/tematicas/deportes-extremos.jpg" />
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 text-center">
+				<div class="item-tematica">
+					<h3>Musica</h3>
+					<a href="#">
+					<img src="~/images/tematicas/musica.jpg" />
+					</a>
+				</div>
+			</div>
+			<div class="col-md-4 text-center">
+				<div class="item-tematica">
+					<h3>Informática</h3>
+					<a href="#">
+					<img src="~/images/tematicas/programacion.jpg" />
+					</a>
+				</div>
+			</div>
+			<div class="col-md-4 text-center">
+				<div class="item-tematica">
+					<h3>Yoga</h3>
+					<a href="#">
+					<img src="~/images/tematicas/yoga.jpg" />
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="row sectionhide">
+			<div class="col-md-4 text-center">
+				<div class="item-tematica">
+					<h3>Emprendimiento y Liderazgo</h3>
+					<a href="#">
+					<img src="~/images/tematicas/emprendimiento.jpg" />
+					</a>
+				</div>
+			</div>
+			<div class="col-md-4 text-center">
+				<div class="item-tematica">
+					<h3>Educación Escolar</h3>
+					<a href="#">
+					<img src="~/images/tematicas/educacion-escolar.JPG" />
+					</a>
+				</div>
+			</div>
+			<div class="col-md-4 text-center">
+				<div class="item-tematica">
+					<h3>Adistramiento Canino</h3>
+					<a href="#">
+					<img src="~/images/tematicas/adiestramiento-canino.jpg" />
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-md-offset-4 text-center">
+				<a type="submit" class="btn btn-green btn-mas-tematicas">
+										<span class="glyphicon glyphicon-chevron-down pad12"></span>
+										&nbsp;Ver más tematicas</a>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="bg-primary bg-default" id="comofunciona">
+    <div class="container">
+        <div class="row">
+			
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+				<div class="content-rel">
+					<div class="content-abs-titulo">
+                		<h2 class="section-heading como-funciona wow bounceInDown">¿Cómo funciona GoMeet?</h2>
+					</div>
+				</div>                               
+            </div>
+			
+			<div class="col-lg-3 text-center">				
+				<div class="icon-accion">
+					<div class="icon-dest glyphicon glyphicon-search wow fadeInUp"></div>										
+				</div>
+				<h3 class="section-sub wow fadeInUp">Busca</h3>
+				<p class="wow fadeInUp">
+				Encuentra desde tu posición geográfica cursos, talleres y tutores de un sin fin de temas.<br> 
+				Lo que quieras hacer esta al alcance de tus manos.
+				</p>	
+			</div>
+			<div class="col-lg-4 col-lg-offset-1 text-center">
+				<div class="icon-accion">
+					<div class="icon-dest lila glyphicon glyphicon-stats wow fadeInUp"></div>										
+				</div>
+				<h3 class="section-sub wow fadeInUp">Compara cualidades y características</h3>
+				<p class="wow fadeInUp">
+				Compara las catacterísticas como: metodologias de enseñansa, ubicación, 
+				valor de mensualidad, disponibilidad de horarios, etc...
+				</p>
+			</div>  
+			<div class="col-lg-3 col-lg-offset-1 text-center">
+				<div class="icon-accion">
+					<div class="icon-dest nar glyphicon glyphicon-heart-empty wow fadeInUp"></div>										
+				</div>
+				<h3 class="section-sub wow fadeInUp">Disfruta<br></h3>
+				<p class="wow fadeInUp">
+				Eso es todo! contrata los servicios que más te acomoden y comienza a disfrutar.
+				</p>
+			</div>
+			
+        </div>
+    </div>
+                        
+</section>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Gomeet</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>   
+
+  </head>
+
+  <body id="page-top" class="fadeIn animated">
+    <nav id="mainNav" class="navbar navbar-go navbar-fixed-top" role="navigation">
+        
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Desplegar navegación</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <%= link_to root_path, :class => "navbar-brand page-scroll fadeInDownBig animated", :title => "GoMeet" do %>                        
+                        <%= image_tag "logo-gomeet.png", :alt => "GoMeet", :title => "GoMeet", :class => "logo pulse animated" %>
+                <% end %>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+    
+            	<div class="container-fluid">
+	                <ul class="nav navbar-nav navbar-left">
+                        <li>
+                            
+                            <%= link_to "Comparte tus habilidades", "/registro" , :class => "btn btn-menu" %>
+                        </li>
+	                </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="page-scroll" href="#inicio">Inicio</a></li>                                                
+                        <li><a class="page-scroll" href="#tematicas">Tematicas</a></li>
+                        <li><a class="page-scroll" href="#comofunciona">Cómo Funciona</a></li>                                                                        
+                        <li><a class="btn btn-primary">REGISTRATE</a></li>                        
+                    </ul>
+
+	    		</div>
+        		<!-- /.container-fluid -->
+
+            </div>
+
+            <!-- /.navbar-collapse -->
+        
+    </nav>
+    <%= yield %>
+
+    <footer class="clasic">
+        
+        <div class="enlaces">
+            <ul>
+                <li><a href="/planes" title="Planes">Planes</a></li>
+                <li><a href="/politica-privacidad" title="Política de Privacidad">Política de Privacidad</a></li>
+                <li><a href="/politica-cookies" title="Política de cookies">Política de cookies</a></li>
+                <li><a href="/terminos-de-uso" title="Términos de Uso">Términos de Uso</a></li>
+                <li><a href="/mapa-del-sitio" title="Mapa del Sitio">Mapa del Sitio</a></li>
+                <li><a href="/contacto" title="Contáctanos">Contáctanos</a></li>
+                <li><a href="/sobre-nosotros" title="Sobre Nosotros">Sobre Nosotros</a></li>        
+            </ul>
+        </div>                
+        <div class="redesSociales">
+            <a href="#" rel="nofollow" title="facebook" target="_blank">                
+                <%= image_tag "icoFac.png", :alt => "Facebook", :title => "Facebook" %></a>
+            <a href="#" rel="nofollow" title="twitter" target="_blank">                
+                <%= image_tag "icoTwi.png", :alt => "Twitter", :title => "Twitter" %></a>
+            <a href="#" rel="nofollow" title="linkedin" target="_blank">                
+                <%= image_tag "icoLin.png", :alt => "Linkedin", :title => "Linkedin" %></a>
+            <a href="#" rel="nofollow" title="google +" target="_blank">
+                <%= image_tag "icoGoo.png", :alt => "Google +", :title => "Google +" %></a>
+        </div>
+        <div class="copyright">2016 GoMeet. Todos los derechos reservados</div>
+    </footer>
+
+    
+    <%= javascript_include_tag 'application' %>
+    
+  </body>
+</html>
