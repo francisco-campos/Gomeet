@@ -21,4 +21,4 @@
 //= require creative
 //= require jquery.fancybox.pack
 //= require parallax.min
-//= require funciones
+//= require app.go
