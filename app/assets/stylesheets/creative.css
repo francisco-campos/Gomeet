@@ -191,7 +191,7 @@ header .header-content {
 
 header .header-content .header-content-inner h1 {
     margin-top: 0;
-    margin-bottom: 0;    
+    margin-bottom: 0;
     font-weight: normal;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
@@ -230,7 +230,7 @@ header .header-content .header-content-inner p {
 
 .unete .unete-content .header-content-inner h1 {
     margin-top: 0;
-    margin-bottom: 0;    
+    margin-bottom: 0;
     font-weight: normal;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
@@ -248,7 +248,7 @@ header .header-content .header-content-inner p {
 
 @media(min-width:768px) {
     /*
-    header, .unete {        
+    header, .unete {
         height: auto;
         max-height: 100%;
     }
@@ -357,7 +357,7 @@ header .header-content .header-content-inner p {
 
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
         font-size: 22px;
-    }    
+    }
     .form-control.level1 {
         height: 54px;
         font-size: 18px;
@@ -535,7 +535,6 @@ fieldset[disabled] .btn-primary.active {
 
 .btn {
     border-radius: 4px;
-    text-transform: uppercase;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
 }

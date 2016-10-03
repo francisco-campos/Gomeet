@@ -3,7 +3,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
-/* 
+/*
     Created on : 01-04-2016, 14:41:14
     Author     : francisco
 */
@@ -47,7 +47,7 @@ body {
     color:#000;
     margin-top: 35px;
     position: relative;
-    z-index: 1;    
+    z-index: 1;
 }
 .mb22 {
     margin-bottom: 22px;
@@ -89,21 +89,21 @@ body {
     background-color: #EEE;
 }
 .infinito {
-    -vendor-animation-iteration-count: infinite;  
-    -webkit-animation-iteration-count: infinite;  
+    -vendor-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite;
 }
 .dur_seg2 {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;  
+  animation-fill-mode: both;
 }
 .dur_seg3 {
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;  
+  animation-fill-mode: both;
 }
 .ini_seg1 {-vendor-animation-delay: 1s;-webkit-animation-delay: 1s;-moz-animation-delay: 1s;}
 .ini_seg1_2 {-vendor-animation-delay: 1.2s;-webkit-animation-delay: 1.2s;-moz-animation-delay: 1.2s;}
@@ -176,7 +176,7 @@ header .header-content .header-content-inner {
 header .header-content .header-content-inner h1 {
     font-family: 'Museo sans';
     color: #FFF;
-    font-size: 3.5em;    
+    font-size: 3.5em;
     margin:20px 0 10px 0;
 }
 header .header-content .header-content-inner h2 {
@@ -192,10 +192,10 @@ header .header-content .header-content-inner h2 {
     margin: 0 auto;
     padding-top: 20px;
 }
-.btn-mouse img {    
+.btn-mouse img {
     width: 30px;
-    height: 84px;  
-    margin-bottom: 80px;      
+    height: 84px;
+    margin-bottom: 80px;
 }
 a.btn.btn-menu {
     border:2px solid #CCC;
@@ -292,7 +292,7 @@ a.btn.btn-menu {
     opacity: 0.8;
     color: #FFF;
     text-align: left;
-    padding-left: 20px;    
+    padding-left: 20px;
     position: absolute;
     z-index: 2;
     width: 100%;
@@ -301,11 +301,11 @@ a.btn.btn-menu {
     font-family: 'Open sans light';
 }
 .item-tematica h3 {
-    bottom: 5%;     
+    bottom: 5%;
 }
 .item-tematica p {
     bottom: 0;
-    font-size: 1.2em;        
+    font-size: 1.2em;
 }
 .content-icons-portada {
     position: absolute;
@@ -478,9 +478,23 @@ footer .redesSociales a {
 .btn.btn-social {
     width: 300px;
     display: block;
-    font-size: 16px;  
-    margin: 10px auto;  
+    font-size: 16px;
+    margin: 10px auto;
+    text-align: left;
 }
+.btn.btn-social.btn-facebook {
+  background-color: #3B5998;
+  color: #FFF;
+}
+.btn.btn-social.btn-google {
+  background-color: #fa0008;
+  color: #FFF;
+}
+.btn.btn-social.btn-reddit {
+  background-color: #FFF;
+  color: #666;
+}
+
 
 /*Dispositivos moviles */
 @media (max-width:736px) {
@@ -508,5 +522,5 @@ footer .redesSociales a {
     header .header-content .header-content-inner h2 {
         font-size: 1.5em;
         margin: 10px 0 10px 0;
-    }    
+    }
 }
