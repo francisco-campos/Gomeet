@@ -15,9 +15,9 @@ body {
 }
 
 hr {
-    max-width: 50px;
-    border-color: #f05f40;
-    border-width: 3px;
+  width: 100%;
+  border-color: #eee;
+  border-width: 1px;
 }
 
 hr.light {
@@ -347,7 +347,13 @@ header .header-content .header-content-inner p {
     opacity: 1;
 }
 .form-control {
-    border: 1px solid #333;
+    border: 1px solid #CCC;
+    box-shadow: none;
+}
+.form-control.big {
+  padding: 10px 12px;
+  height: auto;
+  margin: 10px 0 0 0;
 }
 
 @media(min-width:768px) {
@@ -365,9 +371,9 @@ header .header-content .header-content-inner p {
         float: left;
         border-radius: 0;
         border-right: 0;
-        border-left: 1px solid #333;
-        border-top: 1px solid #333;
-        border-bottom: 1px solid #333;
+        border-left: 1px solid #999;
+        border-top: 1px solid #999;
+        border-bottom: 1px solid #999;
     }
     .form-control.level2 {
         height: 54px;
@@ -375,20 +381,20 @@ header .header-content .header-content-inner p {
         width: 25%;
         float: left;
         border-radius: 0;
-        border-right: 1px solid #333;
-        border-left: 1px solid #333;
-        border-top: 1px solid #333;
-        border-bottom: 1px solid #333;
+        border-right: 1px solid #999;
+        border-left: 1px solid #999;
+        border-top: 1px solid #999;
+        border-bottom: 1px solid #999;
     }
     .form-control.level3 {
         border-radius: 0;
         float: left;
         height: 54px;
         border-radius: 0;
-        border-right: 1px solid #333;
-        border-left: 0px solid #333;
-        border-top: 1px solid #333;
-        border-bottom: 1px solid #333;
+        border-right: 1px solid #999;
+        border-left: 0px solid #999;
+        border-top: 1px solid #999;
+        border-bottom: 1px solid #999;
         width: 15%;
     }
     .pad12 {

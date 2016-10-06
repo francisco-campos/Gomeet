@@ -1,11 +1,30 @@
 
-
-<a href="#" class="btn btn-social btn-facebook">
-    <span class="fa fa-facebook"></span> registrarme con Facebook
-</a>
-<a href="#" id="customBtn" class="btn btn-social btn-google">
-    <span class="fa fa-google"></span> registrarme con Google
-</a>
-<a href="#" class="btn btn-social btn-reddit">
-    <span class="fa glyphicon glyphicon-envelope"></span> registrarme con un Email
-</a>
+<div id="content-register-form">
+  <div id="register-buttons">
+    <a href="#" class="btn btn-social btn-facebook">
+        <span class="fa fa-facebook"></span> Registrarme con Facebook
+    </a>
+    <a href="#" id="customBtn" class="btn btn-social btn-google">
+        <span class="fa fa-google"></span> Registrarme con Google
+    </a>
+    <a href="/users/sign_up" class="btn btn-social btn-reddit">
+      <span class=" glyphicon glyphicon-envelope"></span> Registrarme con un Email
+    </a>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <p class="text-center text-info">Al registrarte estás confirmando que aceptas nuestras
+        <a href="#" class="lnk-green">Condiciones de servicio</a> y la <a href="#" class="lnk-green">Política de Privacidad</a></p>
+    </div>
+  </div>
+  <hr />
+  <div id="login-link">
+    <div class="row">
+      <div class="col-xs-12">
+        <p class="text-left">¿Ya tienes cuenta con nosotros? &nbsp;
+          <%= link_to "Inicia sesión", {controller: "login", action: "ingreso"}, class: "lnk-green underline" %>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

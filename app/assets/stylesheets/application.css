@@ -13,9 +13,9 @@
  *= require lib/bootstrap.min.3.3.6
  *= require lib/font-awesome/css/font-awesome.min
  *= require lib/animate.css-master/animate.min
- *= require lib/fancyBox-master/source/jquery.fancybox
  *= require fonts
  *= require creative
  *= require site
  *= require_self
+ *= require fancybox
  */

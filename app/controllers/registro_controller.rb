@@ -1,5 +1,5 @@
 class RegistroController < ApplicationController
-    layout "portada"
+    layout "portada.maestro"
 
     def index
 

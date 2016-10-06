@@ -1,0 +1,41 @@
+
+<div id="content-register-form">
+
+  <div class="row">
+    <div class="col-xs-12">
+      <form class="form-inline" role="form">
+        <div class="form-group">
+          <label class="sr-only" for="nombre">Nombre</label>
+          <input type="text" class="form-control big" id="nombre"
+                 placeholder="Ingresa tu nombre">
+        </div>
+        <div class="form-group">
+          <label class="sr-only" for="email">Email</label>
+          <input type="email" class="form-control big" id="email"
+                 placeholder="Ingresa tu email">
+        </div>
+        <div class="form-group">
+          <label class="sr-only" for="ejemplo_password">Contraseña</label>
+          <input type="password" class="form-control big" id="ejemplo_password"
+                 placeholder="Contraseña">
+        </div>
+        <div class="checkbox form-login-check">
+          <label>
+            <input type="checkbox" checked="true">Recordarme
+          </label>
+        </div>
+        <button type="submit" class="btn btn-green">Registrarme</button>
+      </form>
+    </div>
+  </div>
+  <hr />
+  <div id="login-link">
+    <div class="row">
+      <div class="col-xs-12">
+        <p class="text-left">¿Ya tienes cuenta con nosotros? &nbsp;
+          <%= link_to "Inicia sesión", {controller: "login", action: "ingreso"}, class: "lnk-green underline" %>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

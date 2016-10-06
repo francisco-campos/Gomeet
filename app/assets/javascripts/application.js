@@ -14,11 +14,11 @@
 //= require tether.min
 //= require bootstrap.min
 //= require jquery_ujs
-//= require turbolinks
 //= require jquery.easing.min
 //= require jquery.fittext
 //= require wow.min
 //= require creative
-//= require jquery.fancybox.pack
 //= require parallax.min
+//= require fancybox
 //= require app.go
+//= require turbolinks

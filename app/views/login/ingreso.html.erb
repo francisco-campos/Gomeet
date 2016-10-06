@@ -1,0 +1,44 @@
+
+<div id="content-register-form">
+  <div id="register-buttons">
+    <a href="#" class="btn btn-social btn-facebook">
+        <span class="fa fa-facebook"></span> Ingresa con Facebook
+    </a>
+    <a href="#" id="customBtn" class="btn btn-social btn-google">
+        <span class="fa fa-google"></span> Ingresa con Google
+    </a>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="col-xs-12">
+      <form class="form-inline" role="form">
+        <div class="form-group form-login-email">
+          <label class="sr-only" for="ejemplo_email_2">Email</label>
+          <input type="email" class="form-control" id="ejemplo_email_2"
+                 placeholder="Introduce tu email">
+        </div>
+        <div class="form-group form-login-clave">
+          <label class="sr-only" for="ejemplo_password_2">Contraseña</label>
+          <input type="password" class="form-control" id="ejemplo_password_2"
+                 placeholder="Contraseña">
+        </div>
+        <div class="checkbox form-login-check">
+          <label>
+            <input type="checkbox"> No cerrar sesión
+          </label>
+        </div>
+        <button type="submit" class="btn btn-green">Ingresar</button>
+      </form>
+    </div>
+  </div>
+  <hr />
+  <div id="login-link">
+    <div class="row">
+      <div class="col-xs-12">
+        <p class="text-left">¿Todavía no tienes una cuenta? &nbsp;
+          <%= link_to "Registrate", {controller: "login", action: "index"}, class: "lnk-green underline" %>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
