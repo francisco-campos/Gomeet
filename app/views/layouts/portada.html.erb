@@ -8,6 +8,7 @@
   </head>
 
   <body id="page-top" class="fadeIn">
+
     <nav id="mainNav" class="navbar navbar-go navbar-fixed-top" role="navigation">
 
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -28,28 +29,48 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
 
             	<div class="container-fluid">
-	                <ul class="nav navbar-nav navbar-left">
-                        <li>
-
-                            <%= link_to "Comparte tus habilidades", "/registro" , :class => "btn btn-menu" %>
-                        </li>
-	                </ul>
+                  <%
+                  if user_signed_in?
+                    %>
+                    <ul class="nav navbar-nav navbar-left">
+                      <li>
+                        <!-- Busqueda de cursos -->
+                        
+                      </li>
+  	                </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                      <li>
+                        <a href="#" class="">
+                          <%= current_user.name %>&nbsp;
+                          <img src="<%= current_user.avatar %>" alt="<%= current_user.name %>">
+                        </a>
+                      </li>
+                    </ul>
+                    <%
+                  else
+                    %>
+  	                <ul class="nav navbar-nav navbar-left">
+                      <li>
+                        <%= link_to "Comparte tus habilidades", "/registro" , :class => "btn btn-menu" %>
+                      </li>
+  	                </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a class="page-scroll" href="#inicio">Inicio</a></li>
                         <li><a class="page-scroll" href="#tematicas">Tematicas</a></li>
                         <li><a class="page-scroll" href="#comofunciona">Cómo funciona</a></li>
-                        <li><a href="/lightbox-registro" class="fancybox">Regístrate</a></li>
-                        <li><a href="/lightbox-login" class="fancybox">Iniciar sesión</a></li>
+                        <li><a href="/users/sign_up" class="">Regístrate</a></li>
+                        <li><a href="/users/sign_in" class="">Iniciar sesión</a></li>
                     </ul>
-
-	    		</div>
-        		<!-- /.container-fluid -->
+                  <% end %>
+	            </div>
+      		    <!-- /.container-fluid -->
 
             </div>
 
             <!-- /.navbar-collapse -->
 
     </nav>
+
     <%= yield %>
 
     <footer class="clasic">

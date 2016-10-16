@@ -16,6 +16,7 @@ body {
 }
 body.lightbox {
   background-color: #FFF;
+  height: auto;
 }
 .bg-primary {
     position: relative;
@@ -475,9 +476,13 @@ footer .redesSociales a {
 .banner-step .cont-txt .ico.lila { color: #A57DC0; }
 a.lnk-green {
   color: #54BA8A;
+  font-size: 14px;
 }
 .underline {
   text-decoration: underline;
+}
+input#user_remember_me {
+  margin: 0;
 }
 .pointmap {
     position: absolute;
@@ -514,10 +519,12 @@ a.lnk-green {
 
 #content-register-form {
   display: block;
-  margin: 0;
-  min-height: 250px;
+  margin: 80px auto;
+  min-height: 450px;
   padding: 0 20px;
-  width: 100%;
+  width: 90%;
+  max-width:500px;
+  background-color: #FFF;
 }
 p.text-center {
   margin: 10px 0;

@@ -3,7 +3,6 @@
   <head>
     <title>Gomeet</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
   </head>
@@ -11,15 +10,7 @@
   <body class="lightbox">
 
     <div class="container-fluid">
-      <!-- Authentication resource -->
-      <% if notice %>
-        <p class="alert alert-success"><%= notice %></p>
-      <% end %>
-      <% if alert %>
-        <p class="alert alert-danger"><%= alert %></p>
-      <% end %>
-      <!-- Authentication resource -->
-
+      
       <%= yield %>
     </div>
     <%= javascript_include_tag 'application' %>

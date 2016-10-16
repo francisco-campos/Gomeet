@@ -2,21 +2,60 @@
 
   <div class="row">
     <div class="col-xs-12">
-      <%= form_for(resource, :html => {:class => 'form-inline'}, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <h1>Regístrate</h1>
+      <!-- Authentication resource -->
+      <% if notice %>
+        <p class="alert alert-success"><%= notice %></p>
+      <% end %>
+      <% if alert %>
+        <p class="alert alert-danger"><%= alert %></p>
+      <% end %>
+      <!-- Authentication resource -->
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <div id="register-buttons">
+        <%= link_to user_facebook_omniauth_authorize_path, :class => "btn btn-social btn-facebook" do %>
+            <span class="fa fa-facebook"></span> Registrarme con Facebook
+        <% end %>
+        <%= link_to user_google_oauth2_omniauth_authorize_path, :class => "btn btn-social btn-google" do %>
+            <span class="fa fa-google"></span> Registrarme con Google
+        <% end %>
+      </div>
+    </div>
+  </div>
 
-        <%= devise_error_messages! %>
+  <div class="row">
+    <div class="col-xs-12">
+      <%= form_for(resource, :html => {:class => ''}, as: resource_name, url: registration_path(resource_name)) do |f| %>
 
         <div class="form-group">
           <%= f.label :name, :class => 'sr-only', :value => 'Nombre' %>
           <%= f.text_field :name, :class => 'form-control big', :placeholder => 'Ingresa tu nombre' %>
+          <%
+          if @user.errors[:name].count > 0
+            %><p class="help-block"><%= @user.errors[:name][0] %></p><%
+          end
+          %>
         </div>
         <div class="form-group">
-          <%= f.label :email, :class => 'sr-only' %>
+          <%= f.label :email, :class => 'sr-only', :value => 'Email' %>
           <%= f.email_field :email, :class => 'form-control big', :placeholder => 'Ingresa tu email' %>
+          <%
+          if @user.errors[:email].count > 0
+            %><p class="help-block"><%= @user.errors[:email][0] %></p><%
+          end
+          %>
         </div>
         <div class="form-group">
           <%= f.label :password, :class => 'sr-only' %>
           <%= f.password_field :password, autocomplete: "off", :class => 'form-control big', :placeholder => 'Contraseña' %>
+          <%
+          if @user.errors[:password].count > 0
+            %><p class="help-block"><%= @user.errors[:password][0] %></p><%
+          end
+          %>
         </div>
 
         <div class="actions">
@@ -24,8 +63,13 @@
         </div>
       <% end %>
 
+    </div>
+  </div>
 
-
+  <div class="row">
+    <div class="col-xs-12">
+      <p class="text-center text-info">Al registrarte estás confirmando que aceptas nuestras
+        <a href="#" class="lnk-green">Condiciones de servicio</a> y la <a href="#" class="lnk-green">Política de Privacidad</a></p>
     </div>
   </div>
 

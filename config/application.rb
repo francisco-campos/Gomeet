@@ -14,12 +14,14 @@ module Gomeet
 
     #Configuration layout for authetication users
     config.to_prepare do
-        Devise::SessionsController.layout "lightbox"
-        Devise::RegistrationsController.layout "lightbox"
-        Devise::ConfirmationsController.layout "lightbox"
-        Devise::UnlocksController.layout "lightbox"
-        Devise::PasswordsController.layout "lightbox"
+        Devise::SessionsController.layout "portada"
+        Devise::RegistrationsController.layout "portada"
+        Devise::ConfirmationsController.layout "portada"
+        Devise::UnlocksController.layout "portada"
+        Devise::PasswordsController.layout "portada"
     end
+
+    config.i18n.default_locale = :es
 
   end
 end

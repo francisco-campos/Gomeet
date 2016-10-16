@@ -30,9 +30,10 @@ $(document).ready(function(){
 
     $("a.fancybox").fancybox({
       'autoSize' : true,
-      'type'     : 'iframe',
       'showCloseButton' : false,
-      'scrolling' : 'no',
+      'scrolling' : 'auto',
+      'height' : '85%',
+      'type' : 'iframe'
     });
 
 });

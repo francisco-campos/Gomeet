@@ -51,3 +51,10 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Authentication users
 gem 'devise'
+
+# Validacion para emails
+gem 'validates_email_format_of', '~> 1.6', '>= 1.6.3'
+
+# Autenticación con redes sociales
+gem 'omniauth-facebook'
+gem 'omniauth-google-oauth2'
