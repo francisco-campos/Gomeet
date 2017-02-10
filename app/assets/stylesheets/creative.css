@@ -175,11 +175,11 @@ aside {
 }
 
 header {
-    position: relative;
-    width: 100%;
-    text-align: center;
-    color: #fff;
-    background: transparent;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: #333;
+  background: #FFF;
 }
 
 header .header-content {

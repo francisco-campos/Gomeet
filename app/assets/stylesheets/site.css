@@ -84,6 +84,7 @@ body.lightbox {
 .navbar-go ul li a {
     color: #666;
     line-height: 120%;
+    font-size: 0.8em;
 }
 .navbar-go ul li a:hover {
     color: #333;
@@ -182,7 +183,7 @@ header .header-content .header-content-inner {
 }
 header .header-content .header-content-inner h1 {
     font-family: 'Museo sans';
-    color: #FFF;
+    color: #333;
     font-size: 3.5em;
     margin:20px 0 10px 0;
 }
@@ -357,7 +358,7 @@ a.btn.btn-menu {
 .navbar-fixed-top {
     background: #FFF;
     padding: 0 2%;
-    opacity: 0.7;
+    opacity: 1;
 }
 .navbar-fixed-top.solid {
     opacity: 1;
@@ -558,6 +559,20 @@ p.text-info {
   float: right;
   font-size: 13px;
 }
+.navbar-form.navbar-form-search .form-group {
+  position: relative;
+}
+.navbar-form.navbar-form-search .form-group .form-control {
+  width: 350px;
+  padding-left: 45px;
+}
+.navbar-form.navbar-form-search .form-group button.btn.btn-default {
+  left: 2px;
+  position: absolute;
+  height: 30px;
+  margin: 2px 0 0 0;
+}
+
 /*Dispositivos moviles */
 @media (max-width:736px) {
     .navbar-fixed-top {

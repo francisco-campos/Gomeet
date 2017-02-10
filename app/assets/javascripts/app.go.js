@@ -7,11 +7,9 @@ $(document).ready(function(){
             var posicion = $win.scrollTop();
 
             if(posicion > 100) {
-                $('.navbar-fixed-top').css('opacity','1');
-                $('.navbar-fixed-top').css('border-bottom','1px solid #000');
+                $('.navbar-fixed-top').css('border-bottom','1px solid #CCC');
             }
             else {
-                $('.navbar-fixed-top').css('opacity','0.7');
                 $('.navbar-fixed-top').css('border-bottom','0');
             }
         });
