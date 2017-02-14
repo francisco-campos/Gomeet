@@ -10,7 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161011183420) do
+ActiveRecord::Schema.define(version: 20170214195406) do
+
+  create_table "images", force: :cascade do |t|
+    t.integer  "library_id"
+    t.string   "location"
+    t.string   "title"
+    t.integer  "order"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["library_id"], name: "index_images_on_library_id"
+  end
+
+  create_table "libraries", force: :cascade do |t|
+    t.string   "title"
+    t.integer  "parent_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["parent_id"], name: "index_libraries_on_parent_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "name",                   default: "", null: false
